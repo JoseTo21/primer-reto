@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*esto siempre se hace*/
+
+img{
+    width: 100%;
+    display: block;
+}
+.img_desktop {
+    display:none;
+}
+
+.ff-Fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+.ff-Montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contairner {
+    padding: 1rem;
+    background-color: var(--Cream);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    display: grid;
+    max-width: 500px;
+    
+
+}
+
+.card_image {
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+}
+
+.card_content{
+    background-color: var(--White);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.card_content h4 {
+    color: var(--Darkgrayishblue);
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.card_content h2 {
+    font-size: 2rem;
+    color: var(--Verydarkblue);
+    
+}
+
+.card_content p {
+    color: var(--Verydarkblue);
+    line-height: 1.5rem;
+    color: var(--Darkgrayishblue);
+    
+}
+
+.card_content-price {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.card_content-price p:nth-child(1){
+    font-size: 2.2rem;
+    color: var(--Darkcyan);
+
+}
+
+.card_content-price p:nth-child(2){
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+}
+
+.card-content-btn {
+    background-color: var(--Darkcyan);
+    border: none;
+    cursor:pointer ;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--White);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    gap: 0.8;
+}
+
+@media (min-width: 700px) {
+    .contairner {
+        background-color: var(--Cream);
+    }
+
+    .img_mobile{
+        display: none;
+    }
+
+    .img_desktop{
+        display: block;
+    }
+
+    .card{
+        max-width: 700px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card_image{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .card_content{
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+        justify-content: center;
+        gap: 1.5rem;
+
+    }
+}
+
+
+/*VER COMO SUBIR EL RETO CON GIT min 47 a la hora dia viernes*/
