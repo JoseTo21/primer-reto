@@ -2,6 +2,7 @@
 
 :root {
     --Darkcyan: hsl(158, 36%, 37%);
+    --btn-hover: hsl(158, 36%, 25%);
     --Cream: hsl(30, 38%, 92%);
     --Verydarkblue: hsl(212, 21%, 14%);
     --Darkgrayishblue: hsl(228, 12%, 48%);
@@ -117,6 +118,15 @@ img{
     display: flex;
     justify-content: center;
     gap: 0.8;
+    transition: background-color 0.5s, transform 0.5s; 
+}
+
+.card-content-btn :hover {
+    background-color: var(--btn-hover);
+}
+
+.card-content-btn :active {
+    transform: scale(1,1);
 }
 
 @media (min-width: 700px) {
@@ -152,4 +162,5 @@ img{
 }
 
 
-/*VER COMO SUBIR EL RETO CON GIT min 47 a la hora dia viernes*/
+/*VER COMO SUBIR EL RETO CON GIT min 47 a la hora
+ dia viernes*/
